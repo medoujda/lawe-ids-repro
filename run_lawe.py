@@ -1,4 +1,4 @@
-"""run_lawe.py — Main execution script for LAWE-IDS.
+"""run_lawe.py - Main execution script for LAWE-IDS.
 
 Usage
 -----

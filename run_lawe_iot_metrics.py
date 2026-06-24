@@ -121,7 +121,7 @@ def main():
         X_test = splits['X_test']
 
         # Full pipeline per-sample latency
-        print("\n  [Full Pipeline — per sample]")
+        print("\n  [Full Pipeline - per sample]")
         full_metrics = measure_iot_metrics(
             lawe.predict_proba, X_test, n_runs=args.n_latency_runs
         )
@@ -130,7 +130,7 @@ def main():
         print(f"    RAM peak: {full_metrics['ram_peak_mb']:.2f} MB")
 
         # Full pipeline batched throughput
-        print("\n  [Full Pipeline — batched throughput]")
+        print("\n  [Full Pipeline - batched throughput]")
         throughput, batch_time = _measure_batched_throughput(
             lawe.predict_proba, X_test, n_runs=3
         )

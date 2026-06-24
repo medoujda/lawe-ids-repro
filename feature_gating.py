@@ -1,4 +1,4 @@
-"""Feature Gating module — learns a soft mask over input features."""
+"""Feature Gating module - learns a soft mask over input features."""
 import torch
 import torch.nn as nn
 
@@ -20,8 +20,8 @@ class FeatureGating(nn.Module):
             x: (batch, n_features) tensor
 
         Returns:
-            gated: (batch, n_features) — input * gates
-            gates: (batch, n_features) — gate values in [0, 1]
+            gated: (batch, n_features) - input * gates
+            gates: (batch, n_features) - gate values in [0, 1]
         """
         gates = torch.sigmoid(self.gate_layer(x))
         gated = x * gates

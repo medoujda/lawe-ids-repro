@@ -1,4 +1,4 @@
-"""Attention Meta-Learner — per-sample adaptive weighting of base learners."""
+"""Attention Meta-Learner - per-sample adaptive weighting of base learners."""
 import numpy as np
 import torch
 import torch.nn as nn

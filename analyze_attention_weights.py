@@ -1,4 +1,4 @@
-"""Analyze per-sample attention weights — interpretability figures for LAWE-IDS.
+"""Analyze per-sample attention weights - interpretability figures for LAWE-IDS.
 
 For each dataset:
   1. Train a LAWE-IDS pipeline (or reuse a saved one if available).
@@ -69,7 +69,7 @@ def _boxplot_weights(weights, dataset_name, out_path):
         patch.set_facecolor(color)
         patch.set_alpha(0.7)
     ax.set_ylabel('Per-sample attention weight')
-    ax.set_title(f'{dataset_name.upper()} — weights per base learner')
+    ax.set_title(f'{dataset_name.upper()} - weights per base learner')
     ax.set_ylim(0.0, 1.0)
     ax.grid(axis='y', alpha=0.3)
     plt.tight_layout()
@@ -107,7 +107,7 @@ def _boxplot_by_class(weights, y_pred, dataset_name, out_path):
     ax.set_xticklabels(MODEL_LABELS)
     ax.set_ylabel('Per-sample attention weight')
     ax.set_title(
-        f'{dataset_name.upper()} — weights by predicted class '
+        f'{dataset_name.upper()} - weights by predicted class '
         f'(blue=benign n={int(benign_mask.sum())}, '
         f'red=attack n={int(attack_mask.sum())})'
     )
@@ -135,7 +135,7 @@ def _topk_gates(gates, feature_names, dataset_name, out_path, k=15):
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels, fontsize=8)
     ax.set_xlabel('Mean feature gate value')
-    ax.set_title(f'{dataset_name.upper()} — top-{k} features by mean gate')
+    ax.set_title(f'{dataset_name.upper()} - top-{k} features by mean gate')
     ax.set_xlim(0.0, 1.0)
     ax.grid(axis='x', alpha=0.3)
     plt.tight_layout()

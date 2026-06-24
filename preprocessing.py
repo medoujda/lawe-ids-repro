@@ -84,7 +84,7 @@ def _load_unsw_raw(exclude_attack_categories=None):
     ----------
     exclude_attack_categories : list of str, optional
         Attack categories to exclude from the dataset (e.g., ['Fuzzers']).
-        These are removed BEFORE feature processing — flow-based features
+        These are removed BEFORE feature processing - flow-based features
         cannot reliably detect payload-dependent attacks like Fuzzers.
     """
     train_df = pd.read_csv(UNSW_TRAIN)

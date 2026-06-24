@@ -1,4 +1,4 @@
-"""Ablation study for LAWE-IDS — 5 conditions per dataset.
+"""Ablation study for LAWE-IDS - 5 conditions per dataset.
 
 Optimised: base learners are trained ONCE per dataset and reused across
 conditions that share the same model set. Only the meta-learner / weighting
@@ -93,7 +93,7 @@ def run_full(splits, val_probas, test_probas, models, n_features, **kw):
 
 
 def run_no_feature_gating(splits, val_probas, test_probas, models, n_features, **kw):
-    """No Feature Gating — freeze gates to ~1.0."""
+    """No Feature Gating - freeze gates to ~1.0."""
     print("\n  [Ablation] No Feature Gating")
     ml, _ = train_meta_learner(
         splits['X_val'], val_probas, splits['y_val'],
@@ -117,7 +117,7 @@ def run_no_feature_gating(splits, val_probas, test_probas, models, n_features, *
 
 
 def run_fixed_weights(splits, val_probas, test_probas, models, n_features, **kw):
-    """Fixed weights via grid search — no attention meta-learner."""
+    """Fixed weights via grid search - no attention meta-learner."""
     print("\n  [Ablation] Fixed Weights (no attention)")
     n_models = val_probas.shape[1]
 
@@ -143,7 +143,7 @@ def run_fixed_weights(splits, val_probas, test_probas, models, n_features, **kw)
 
 def run_no_self_attention(splits, val_probas_vanilla, test_probas_vanilla,
                           models, n_features, **kw):
-    """Vanilla CNN-BiLSTM (no self-attention) — uses pre-trained vanilla models."""
+    """Vanilla CNN-BiLSTM (no self-attention) - uses pre-trained vanilla models."""
     print("\n  [Ablation] No Self-Attention (vanilla CNN-BiLSTM)")
     ml, _ = train_meta_learner(
         splits['X_val'], val_probas_vanilla, splits['y_val'],
@@ -163,7 +163,7 @@ def run_no_self_attention(splits, val_probas_vanilla, test_probas_vanilla,
 
 
 def run_no_catboost(splits, val_probas_3, test_probas_3, models, n_features, **kw):
-    """3 base learners only (no CatBoost) — uses pre-trained 3-model probas."""
+    """3 base learners only (no CatBoost) - uses pre-trained 3-model probas."""
     print("\n  [Ablation] No CatBoost (3 models)")
     ml, _ = train_meta_learner(
         splits['X_val'], val_probas_3, splits['y_val'],
