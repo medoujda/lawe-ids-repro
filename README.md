@@ -1,6 +1,6 @@
 # LAWE-IDS: A Lightweight Attention-Weighted Ensemble for Intrusion Detection in IoT Networks
 
-Reproducibility package for the paper submitted to [journal name].
+Reproducibility package.
 
 > **Anonymous review**: this repository is anonymized via
 > [anonymous.4open.science](https://anonymous.4open.science).
