@@ -1,0 +1,6 @@
+dataset,n_features,full_inference_ms,meta_inference_ms,full_ram_mb,meta_ram_mb,meta_size_mb,meta_flops,meta_params,seed,n_test,per_sample_ms,per_sample_std_ms,meta_per_sample_ms,meta_per_sample_std_ms,throughput_samples_sec,full_ram_peak_mb,size_xgboost_mb,size_lightgbm_mb,size_catboost_mb,size_cnn_bilstm_mb,size_meta_mb,size_total_mb,use_optuna
+unsw-nb15,42,,,,,,16446,16338,42,46686.0,25.7337,0.7378,0.0429,0.0033,2055.3,16.66,26.5726,6.7814,125.0233,2.2024,0.0658,160.6455,False
+nsl-kdd,41,,,,,,16232,16126,42,14852.0,26.4271,0.6847,0.0431,0.0026,2048.2,5.26,13.4793,6.8085,122.7194,2.2024,0.065,145.2747,False
+cicids2017,77,,,,,,25196,25018,42,100000.0,26.919,0.6833,0.0449,0.0027,1908.4,62.27,16.4318,6.9355,125.2806,2.2025,0.0989,150.9492,False
+ton-iot,77,,,,,,25196,25018,42,100000.0,26.8935,0.6828,0.0438,0.0024,1912.2,62.27,40.4988,6.7921,125.2863,2.2025,0.0989,174.8786,False
+cicids2023,46,,,,,,17322,17206,42,100000.0,26.0657,1.0211,0.044,0.0066,2036.4,38.62,20.7511,6.7934,125.2818,2.2025,0.0691,155.0979,False

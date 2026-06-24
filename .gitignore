@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+catboost_info/
+
+# Dataset files (download separately — see data/README.md)
+data/unsw-nb15/
+data/nsl-kdd/
+data/cicids2017/
+data/ton-iot/
+data/cicids2023/
+
+# Saved model weights (too large for git; reproduce via run_lawe.py)
+results/models_*/
+
+# Optuna study artifacts
+results/optuna_params/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
